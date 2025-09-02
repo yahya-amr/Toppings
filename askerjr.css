@@ -1,0 +1,55 @@
+body{
+    text-align: center;
+}
+
+.ww{
+    color: aqua;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    margin: bottom 50%;
+}
+
+.GAMES{
+     justify-content: center;
+    text-align: center;
+    display: grid;
+grid-template-columns: repeat(1fr, 200px);
+}
+
+.GAMES P {
+padding: 20px;
+    background: linear-gradient(rgb(208, 255, 0), rgb(0, 234, 255), rgb(105, 0, 128));
+    color: white;
+}
+
+.GAMES img {
+ width: 150px;
+ height: 150px;
+padding-bottom: 20px;
+border-radius: 25%;
+margin: auto;
+animation: rotate 7s linear infinite alternate;
+contain-intrinsic-block-size: 80px;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        opacity: .1;
+    }
+    to {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+
+
+        @media (max-width: 768px) {
+    .GAMES {
+        display: flex;
+    }
+}
+        
